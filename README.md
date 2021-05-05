@@ -1,3 +1,2 @@
 # website1
-
-Voici mon projet
+A project I did with help using html, css and JS
