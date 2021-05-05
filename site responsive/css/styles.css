@@ -1,0 +1,433 @@
+:root {
+    --fond: #002633;
+    --rouge: #c81010;
+    --bleu: #005881;
+    --jaune: #e4a600;
+    --vert: #00b5a6;
+    --texte: #7697A2;
+    font-family: "Barlow", sans-serif;
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    color: white;
+    margin: 0;
+    background-color: var(--fond);
+}
+
+img {
+    width: 100%;
+
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    text-align: center;
+}
+
+.menu-button {
+    background-color: #454545;
+    font-size: 3.5rem;
+    margin: 0;
+    width: 60px;
+    line-height: 60px;
+}
+
+.menu-logo {
+    flex: 1;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: none;
+}
+
+#carousel {
+    position: relative;
+
+}
+
+#carousel figure {
+    position: relative;
+    text-transform: uppercase;
+    display: none;
+}
+
+#carousel img {
+    height: calc(100vh - 60px);
+    object-fit: cover;
+}
+
+#carousel figure.active {
+    display: block;
+}
+
+#carousel figcaption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#carousel h1 {
+    background-color: var(--rouge);
+    font-size: 3rem;
+    padding: 10px;
+    margin: 0;
+}
+
+#carousel h2 {
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 0;
+}
+
+#fleche-gauche,
+#fleche-droite {
+    position: absolute;
+    bottom: 0;
+    font-size: 3rem;
+    background-color: grey;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#fleche-droite {
+    right: 0;
+}
+
+
+#boutons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#boutons article:not(.image) {
+    padding: 20px;
+}
+
+.icon {
+    font-size: 5rem;
+    margin: 0;
+}
+
+.rouge {
+    background-color: var(--rouge);
+}
+
+.bleu {
+    background-color: var(--bleu);
+}
+
+.jaune {
+    background-color: var(--jaune);
+}
+
+.vert {
+    background-color: var(--vert);
+}
+
+.image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Responsive */
+#responsive {
+    padding: 8rem 0;
+    width: 50%;
+  
+    margin: auto;
+}
+
+#responsive h1,
+#references h1 {
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+#responsive span,
+#references span {
+    font-weight: 200;
+}
+
+#responsive p,
+#titre p,
+#coordonnées,
+address {
+    color: var(--texte);
+    line-height: 1.5rem;
+}
+
+/* Section3 */
+#section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#section3 h1 {
+    font-size: 3rem;
+}
+
+#section3 .texte {
+    padding: 1rem;
+}
+
+#section3 ul {
+    padding-left: 1rem;
+}
+
+/* References */
+#references h1 {
+    text-align: center;
+}
+
+#references div,
+#reseaux {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Social */
+#social {
+    margin-bottom: 15px;
+}
+
+#titre {
+    text-align: right;
+    margin: 30px 10px;
+}
+
+#titre h1 {
+    text-transform: uppercase;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #55acee;
+}
+
+.youtube {
+    background-color: #bb0000;
+}
+
+.linkedin {
+    background-color: #007bb5;
+}
+
+#reseaux p {
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#reseaux a {
+    color: white;
+}
+
+#question {
+    display: flex;
+}
+
+#question section:first-of-type {
+    flex: 1;
+    padding-right: 15px;
+
+}
+
+#question section:last-of-type {
+    flex: 3;
+    padding-right: 15px;
+
+}
+
+#contemporain img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#question h1 {
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+#question span {
+    color: red;
+}
+
+address {
+    font-style: normal;
+    line-height: 2.2rem;
+}
+
+#copy {
+    text-align: center;
+}
+
+#coordonnees section:last-of-type {
+    display: flex;
+}
+
+#coordonnees section:last-of-type article {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+#coordonnees section:last-of-type article h1 {
+    margin-top: 1rem
+}
+
+/* Coordonnées */
+#coordonnees {
+    display: flex;
+}
+
+#coordonnees section:first-of-type {
+    flex: 1;
+    padding-right: 15px;
+}
+
+#coordonnees section:last-of-type {
+    flex: 3;
+    padding-right: 15px;
+}
+
+#coordonnees section>img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#coordonnees h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+#coordonnees article:not(:first-child) h1 {
+    margin-top: 3rem;
+}
+
+#coordonnees span {
+    color: var(--rouge);
+}
+
+#copyright {
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    :root {
+        font-size: 16px;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .menu-logo {
+        flex: unset;
+    }
+
+    nav ul {
+        display: initial;
+    }
+
+    nav li {
+        display: inline;
+        text-transform: uppercase;
+        margin-left: 3rem;
+    }
+
+    nav li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--texte);
+    }
+
+    #carousel div {
+        width: unset;
+    }
+
+    #carousel h1,
+    #carousel h2 {
+        width: max-content;
+        max-width: 100%;
+    }
+
+
+    .image {
+        grid-row: 1/4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .rouge,
+    #boutons .bleu {
+        grid-row: 1/3;
+    }
+
+    .jaune,
+    .vert {
+        grid-row: 3/5;
+    }
+
+    #social {
+        display: flex;
+    }
+
+    #titre {
+        flex: 1
+    }
+
+    #reseaux {
+        flex: 2;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 15px;
+    }
+
+    #coordonnees section:last-of-type {
+        display: flex;
+    }
+
+    #coordonnees section:last-of-type article {
+        flex: 1;
+        padding: 0 1rem;
+    }
+
+    #coordonnees section:last-of-type article h1 {
+        margin-top: 1rem
+    }
+
+}
